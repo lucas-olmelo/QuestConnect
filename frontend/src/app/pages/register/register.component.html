@@ -1,0 +1,46 @@
+<div class="register-container">
+    <div class="image-container"> 
+        <img class="image" src="../../../assets/images/logo-removebg.png" alt="">
+    </div>
+    <div class="form-container">
+        <div class="buttons-container">
+            <div class="home-button">
+                <button mat-mini-fab aria-label="Example icon button with a home icon" [routerLink]="['']">
+                    <mat-icon>home</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="form-title">
+            <h2>Registro</h2>
+            <p>Junte-se a comunidade gamer da QuestConnect</p>
+        </div>
+        <mat-form-field appearance="outline" class="input-container">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Seu email..." style="height: 50px;">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="input-container">
+            <mat-label>Usuário</mat-label>
+            <input matInput placeholder="Seu email..." style="height: 50px;">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="input-container">
+            <mat-label>Senha</mat-label>
+            <input matInput placeholder="Sua senha..." [type]="hide ? 'password' : 'text'" style="height: 50px;">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="input-container">
+            <mat-label>Repita a Senha</mat-label>
+            <input matInput placeholder="Sua senha..." [type]="hide ? 'password' : 'text'" style="height: 50px;">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <div class="login-button">
+            <button mat-flat-button>Registrar</button>
+        </div>
+        <div class="register">
+            <p>Já possui conta? <a [routerLink]="['/login']">Clique aqui para logar no QuestConnect!</a></p>
+        </div>
+    </div>
+</div>

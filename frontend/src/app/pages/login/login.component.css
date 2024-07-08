@@ -1,0 +1,66 @@
+.login-container {
+    display: flex;
+    height: 100vh; /* 100% da altura da viewport */
+}
+
+.image-container {
+    flex: 1; /* Faz a div ocupar o espaço restante */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(173,61,146,1) 25%, rgba(32,246,248,1) 50%, rgba(251,115,203,1) 75%, rgba(250,39,154,1) 100%);
+}
+
+.full-height-image {
+    height: 100vh; /* Garante que a imagem ocupe a altura completa da viewport */
+    width: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+}
+
+.form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-button {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+}
+
+.form-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.form-title h2{
+    margin-bottom: 1%;
+    font-size: 35px;
+}
+
+.input-container {
+    width: 40%;
+}
+
+.login-button {
+    display: table-cell;
+    max-width: 600px;
+    background-color: #298FDB;
+    border-radius: 15px;
+}
+
+.register p {
+    font-size: 12px;
+    margin-top: 10%;
+}
+
+.register a {
+    color: #298FDB;
+}

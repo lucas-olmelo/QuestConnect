@@ -1,0 +1,55 @@
+.register-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-button {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+}
+
+.form-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.form-title h2{
+    margin-bottom: 1%;
+    font-size: 35px;
+}
+
+/* Ajustar a largura do mat-form-field */
+mat-form-field {
+    width: 40%; /* Pode ser ajustado para um valor fixo, como 300px ou uma porcentagem */
+}
+
+.login-button {
+    display: table-cell;
+    max-width: 600px;
+    background-color: #298FDB;
+    border-radius: 15px;
+}
+
+.register p {
+    font-size: 12px;
+    margin-top: 10%;
+}

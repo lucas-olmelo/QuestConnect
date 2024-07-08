@@ -1,0 +1,25 @@
+<div class="header-container">
+    <div class="header-title">
+        <img src="../../../assets/images/logo-removebg.png" alt="QuestConnect Logo">
+        <h1 [routerLink]="['']">QuestConnect</h1>
+    </div>
+    <div class="searchbar-container">
+        <input class="searchbar" type="text" placeholder="Pesquisar...">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="search" class="icon"></mat-icon>
+    </div>
+    <div class="links-container">
+        <div class="link-button">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="notifications" class="button-icon"></mat-icon>
+        </div>
+        <div class="link-button">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="chat_bubble" class="button-icon"></mat-icon>
+        </div>
+        <div class="user-container" [routerLink]="['login']">
+            <p class="username">Placeholder</p>
+            <div class="link-button">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="account_circle" class="button-icon"></mat-icon>
+            </div>
+        </div>
+    </div>
+</div>
+
