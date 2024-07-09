@@ -3,11 +3,13 @@ package olmelo.lucas.backend.domain.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import olmelo.lucas.backend.domain.enums.UserRole;
 
 @Entity
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "tb_user")
 public class User {
 

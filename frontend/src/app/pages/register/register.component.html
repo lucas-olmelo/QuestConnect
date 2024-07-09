@@ -14,24 +14,34 @@
             <h2>Registro</h2>
             <p>Junte-se a comunidade gamer da QuestConnect</p>
         </div>
-        <mat-form-field appearance="outline" class="input-container">
+        <div class="name-container">
+            <mat-form-field appearance="outline">
+                <mat-label>Nome</mat-label>
+                <input matInput placeholder="Seu nome...">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Sobrenome</mat-label>
+                <input matInput placeholder="Seu sobrenome...">
+            </mat-form-field>
+        </div>
+        <mat-form-field appearance="outline">
             <mat-label>Email</mat-label>
-            <input matInput placeholder="Seu email..." style="height: 50px;">
+            <input matInput placeholder="Seu email...">
         </mat-form-field>
-        <mat-form-field appearance="outline" class="input-container">
+        <mat-form-field appearance="outline">
             <mat-label>Usuário</mat-label>
-            <input matInput placeholder="Seu email..." style="height: 50px;">
+            <input matInput placeholder="Seu usuário...">
         </mat-form-field>
-        <mat-form-field appearance="outline" class="input-container">
+        <mat-form-field appearance="outline">
             <mat-label>Senha</mat-label>
-            <input matInput placeholder="Sua senha..." [type]="hide ? 'password' : 'text'" style="height: 50px;">
+            <input matInput placeholder="Sua senha..." [type]="hide ? 'password' : 'text'">
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                 <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
         </mat-form-field>
-        <mat-form-field appearance="outline" class="input-container">
+        <mat-form-field appearance="outline">
             <mat-label>Repita a Senha</mat-label>
-            <input matInput placeholder="Sua senha..." [type]="hide ? 'password' : 'text'" style="height: 50px;">
+            <input matInput placeholder="Sua senha..." [type]="hide ? 'password' : 'text'">
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                 <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
@@ -39,7 +49,7 @@
         <div class="login-button">
             <button mat-flat-button>Registrar</button>
         </div>
-        <div class="register">
+        <div class="login">
             <p>Já possui conta? <a [routerLink]="['/login']">Clique aqui para logar no QuestConnect!</a></p>
         </div>
     </div>

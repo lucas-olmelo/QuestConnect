@@ -1,0 +1,30 @@
+<div class="post-container">
+    <div class="post_user-container">
+        <img class="profile-pic" src="../../../assets/images/default_profile_image.png" alt="Imagem do perfil">
+        <form>
+            <textarea class="text-input" #myTextarea name="" id="" placeholder="Compartilhe sua experiência gamer..." (input)="ajustarAltura()" ></textarea>
+            <!-- <textarea #myTextarea placeholder="Escreva algo..."
+                class="textInput" 
+                type="text" 
+                id="postText" 
+                name="postText" 
+                (input)="ajustarAltura()" 
+                rows="1">
+            </textarea> -->
+        </form>
+    </div>
+    <div class="actions-container">
+        <div class="actions">
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                <mat-icon>image</mat-icon>
+            </button>
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                <mat-icon>insert_link</mat-icon>
+            </button>
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+                <mat-icon>insert_emoticon</mat-icon>
+            </button>
+        </div>
+        <button mat-flat-button>Enviar</button>
+    </div>
+</div>

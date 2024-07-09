@@ -9,15 +9,21 @@
     </div>
     <div class="links-container">
         <div class="link-button">
-            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="notifications" class="button-icon"></mat-icon>
+            <button mat-mini-fab aria-label="Example icon button with a menu icon">
+                <mat-icon>notifications</mat-icon>
+            </button>
         </div>
         <div class="link-button">
-            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="chat_bubble" class="button-icon"></mat-icon>
+            <button mat-mini-fab aria-label="Example icon button with a home icon">
+                <mat-icon>chat_bubble</mat-icon>
+            </button>
         </div>
         <div class="user-container" [routerLink]="['login']">
-            <p class="username">Placeholder</p>
-            <div class="link-button">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="account_circle" class="button-icon"></mat-icon>
+            <p class="username">Johanna-Maria</p>
+            <div>
+                <button mat-mini-fab aria-label="Example icon button with a menu icon">
+                    <mat-icon>account_circle</mat-icon>
+                </button>
             </div>
         </div>
     </div>

@@ -33,13 +33,20 @@
 }
 
 .form-title h2{
-    margin-bottom: 1%;
+    margin-bottom: 5%;
     font-size: 35px;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    gap: 5%;
 }
 
 /* Ajustar a largura do mat-form-field */
 mat-form-field {
-    width: 40%; /* Pode ser ajustado para um valor fixo, como 300px ou uma porcentagem */
+    width: 60%; /* Pode ser ajustado para um valor fixo, como 300px ou uma porcentagem */
 }
 
 .login-button {
@@ -49,7 +56,11 @@ mat-form-field {
     border-radius: 15px;
 }
 
-.register p {
+.login p {
     font-size: 12px;
     margin-top: 10%;
+}
+
+.login a {
+    color: #298FDB;
 }

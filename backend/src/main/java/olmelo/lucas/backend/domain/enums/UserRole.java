@@ -1,7 +1,12 @@
 package olmelo.lucas.backend.domain.enums;
 
 import lombok.Data;
+import lombok.Getter;
+import org.springframework.security.core.GrantedAuthority;
 
+import java.util.Collection;
+
+@Getter
 public enum UserRole {
 
     ADMIN("admin"),
@@ -13,9 +18,6 @@ public enum UserRole {
         this.role = role;
     }
 
-    public String getRole(){
-        return this.role;
-    }
 }
 
 

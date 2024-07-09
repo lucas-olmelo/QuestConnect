@@ -41,19 +41,12 @@
 }
 
 .form-title h2{
-    margin-bottom: 1%;
+    margin-bottom: 5%;
     font-size: 35px;
 }
 
 .input-container {
     width: 40%;
-}
-
-.login-button {
-    display: table-cell;
-    max-width: 600px;
-    background-color: #298FDB;
-    border-radius: 15px;
 }
 
 .register p {
